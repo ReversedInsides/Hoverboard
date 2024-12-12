@@ -528,7 +528,7 @@ local VectorLook = nil
 MusicSettings = {
 	Name = "Music";
 	SoundId = 97041575553601;
-	Volume = 1;
+	Volume = 0;
 	PlaybackSpeed = 1;
 	TimePosition = 0;
 	Looped = true;
@@ -737,7 +737,7 @@ function KeyDown(Button)
 		if MusicSettings.Volume ~= 0 then
 			MusicSettings.Volume = 0
 		else
-			MusicSettings.Volume = VolumeMus
+			MusicSettings.Volume = 0.5
 		end
 	end
 end
